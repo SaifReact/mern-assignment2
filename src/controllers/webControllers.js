@@ -13,7 +13,7 @@ exports.contactPage =(req, res)=>{
 const fs = require('fs');
 
 exports.fileWrite =(req, res)=>{
-    fs.writeFile('demo.text','hello world', function(err){
+    fs.writeFile('demo1.text','hello world', function(err){
         if(err){
             res.end('File Create Failed');
         } else {
