@@ -35,7 +35,7 @@ function handleRequest(req, res) {
         fs.writeFile('demo.txt', 'hello world', function(error) {
             if (error) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.end("Something went Wrong");
+                res.end("File Create Failed");
             } else {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
                 res.end("File Create Successfully");
@@ -54,5 +54,5 @@ function handleRequest(req, res) {
     }
 }
 http.listen(5500, function() {
-    console.log('Server is Running....')
+    console.log('Server is running at 5500 port')
 });

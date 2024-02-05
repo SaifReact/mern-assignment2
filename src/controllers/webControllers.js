@@ -39,9 +39,9 @@ const storage = multer.diskStorage({
 
     upload(req, res, function(err){
         if(err){
-            res.end('File Upload Failed');
+            res.end('File uploading Failed');
         } else {
-            res.end('File Upload Success');
+            res.end('File Uploaded Successfully');
         }
     })
 }
